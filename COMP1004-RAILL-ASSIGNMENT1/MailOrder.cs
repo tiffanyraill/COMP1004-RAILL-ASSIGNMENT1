@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -25,15 +26,17 @@ namespace COMP1004_RAILL_ASSIGNMENT1
         {
 
         }
+
+        //Clears EmployeeName, EmployeeID, hoursWorked, and Sales Bonus Fields
         private void ClearButton_Click(object sender, EventArgs e)
         {
             EmployeeNameTextBox.Text = "";
             employeeIDTextBox.Text = "";
             hoursWorkedTextBox.Text = "";
             salesBonusTextBox.Text = "";
-
-
         }
+
+        //Shows "Now Printing" Message Dialogue box
         private void PrintButton_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Printing");
@@ -45,23 +48,33 @@ namespace COMP1004_RAILL_ASSIGNMENT1
             ///Multiply Total Monthly Sales by 0.02 – This will calculate 2% of Sales which is the Total Bonus Amount. 
             ///Multiply the Percentage of Hours Worked by the Total Bonus Amount. 
             /// This will determine the value you need to display in the Sales Bonus Text Field.
+            
+            try
+            {
+                decimal hours = Convert.ToDecimal(hoursWorkedTextBox.Text);
+                decimal maxHours = 160;
+                decimal percentHours = hours / maxHours;
+                ///determine if the hours are within the range of 1-160
+                if (hours > 160 || hours <= 0)
+                {
+                    MessageBox.Show("Please Enter 1-160 Hours");
+                }
 
-            decimal hours = Convert.ToDecimal(hoursWorkedTextBox.Text);
-            decimal maxHours = 160;
-            decimal percentHours = hours / maxHours;
+                decimal sales = Convert.ToDecimal(totalSalesTextBox.Text);
+                decimal percentOfSales = .02m;
+                decimal totalSales = sales * percentOfSales;
+              
+                decimal salesBonus = Math.Round(percentHours * totalSales, 2);
+                salesBonusTextBox.Text = Convert.ToString(salesBonus);
+                ///add some currency formatting
+                salesBonusTextBox.Text = salesBonus.ToString("c");
+            }
+            catch (Exception)
+            {
+                throw new InvalidOperationException("Invalid Data Entry");
+            }
 
-            decimal sales = Convert.ToDecimal(totalSalesTextBox.Text);
-            decimal percentOfSales = .02m;
-            decimal totalSales = sales * percentOfSales;
-           /// totalSalesTextBox.Text = totalSales.ToString("c");
-
-            decimal salesBonus = Math.Round(percentHours * totalSales, 2);
-
-
-            salesBonusTextBox.Text = Convert.ToString(salesBonus);
-            ///add some currency formatting
-            salesBonusTextBox.Text = salesBonus.ToString("c");
-          
         }
     }
 }
+
