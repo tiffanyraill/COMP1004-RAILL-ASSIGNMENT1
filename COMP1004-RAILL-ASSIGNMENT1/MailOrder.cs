@@ -30,14 +30,13 @@ namespace COMP1004_RAILL_ASSIGNMENT1
             EmployeeNameTextBox.Text = "";
             employeeIDTextBox.Text = "";
             hoursWorkedTextBox.Text = "";
-            totalSalesTextBox.Text = "";
             salesBonusTextBox.Text = "";
 
 
         }
         private void PrintButton_Click(object sender, EventArgs e)
         {
-
+            MessageBox.Show("Printing");
         }
 
         private void CalculateButton_Click(object sender, EventArgs e)

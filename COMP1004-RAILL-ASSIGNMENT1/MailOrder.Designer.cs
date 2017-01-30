@@ -243,7 +243,7 @@ namespace COMP1004_RAILL_ASSIGNMENT1
             this.ClearButton.Name = "ClearButton";
             this.ClearButton.Size = new System.Drawing.Size(125, 34);
             this.ClearButton.TabIndex = 13;
-            this.ClearButton.Text = "Clear";
+            this.ClearButton.Text = "Next";
             this.ClearButton.UseVisualStyleBackColor = true;
             this.ClearButton.Click += new System.EventHandler(this.ClearButton_Click);
             // 
