@@ -51,7 +51,7 @@
     <Compile Include="MailOrder.Designer.cs">
       <DependentUpon>MailOrder.cs</DependentUpon>
     </Compile>
-    <Compile Include="MailOrderFunctionality.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="MailOrder.resx">
       <DependentUpon>MailOrder.cs</DependentUpon>

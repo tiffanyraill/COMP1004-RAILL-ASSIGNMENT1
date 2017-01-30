@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace COMP1004_RAILL_ASSIGNMENT1
 {
-    static class MailOrderFunctionality
+    static class Program
     {
         /// <summary>
         /// The main entry point for the application.

@@ -42,6 +42,9 @@ namespace COMP1004_RAILL_ASSIGNMENT1
             MessageBox.Show("Printing");
         }
 
+        /// <summary>
+        /// This section calculates the Sales Bonus per Employee.
+        /// </summary>
         private void CalculateButton_Click(object sender, EventArgs e)
         {
             ///Divide the Total Hours Worked by 160. This will determine the Percentage of hours worked during the bonus period.
@@ -75,6 +78,65 @@ namespace COMP1004_RAILL_ASSIGNMENT1
             }
 
         }
+
+        /// <summary>
+        /// Language Radio Button Options
+        /// Default language is English
+        /// </summary>
+        private void englishRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            
+                //make this the default checked radio button
+                englishRadioButton.AutoCheck = true;
+
+                languageBox.Text = "Language";
+                employeeNameLabel.Text = "Employee's Name:";
+                employeeIDLabel.Text = "Employee ID:";
+                hoursWorkedLabel.Text = "Hours Worked:";
+                totalSalesLabel.Text = "Total Sales:";
+                salesBonusLabel.Text = "Sales Bonus:";
+                CalculateButton.Text = "Calculate";
+                PrintButton.Text = "Print";
+                ClearButton.Text = "Next";
+
+        }
+
+        /// <summary>
+        ///Language Selected: French
+        /// </summary>
+        private void francaisRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+
+            languageBox.Text = "Language";
+            employeeNameLabel.Text = "Nom de l'Employé:";
+            employeeIDLabel.Text = "Nº Employé:";
+            hoursWorkedLabel.Text = "Heures Travaillées:";
+            totalSalesLabel.Text = "Total des ventes:";
+            salesBonusLabel.Text = "Bonification de ventes:";
+            CalculateButton.Text = "Calculez";
+            PrintButton.Text = "Imprimer";
+            ClearButton.Text = "Suivant";
+
+        }
+        /// <summary>
+        ///Language Selected: Spanish
+        /// </summary>
+        private void espagnolRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            
+            languageBox.Text = "Idioma";
+            employeeNameLabel.Text = "El nombre del empleado:";
+            employeeIDLabel.Text = "Identificación del empleado:";
+            hoursWorkedLabel.Text = "Horas trabajadas:";
+            totalSalesLabel.Text = "Ventas totales:";
+            salesBonusLabel.Text = "Prima de las ventas:";
+            CalculateButton.Text = "Calcule";
+            PrintButton.Text = "Impresión";
+            ClearButton.Text = "Siguiente";
+
+        }
+
+       
     }
 }
 

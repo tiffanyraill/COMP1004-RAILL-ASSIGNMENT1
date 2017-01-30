@@ -33,75 +33,78 @@ namespace COMP1004_RAILL_ASSIGNMENT1
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SalesBonus));
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.languageBox = new System.Windows.Forms.GroupBox();
+            this.espagnolRadioButton = new System.Windows.Forms.RadioButton();
+            this.francaisRadioButton = new System.Windows.Forms.RadioButton();
+            this.englishRadioButton = new System.Windows.Forms.RadioButton();
             this.EmployeeNameTextBox = new System.Windows.Forms.TextBox();
             this.employeeIDTextBox = new System.Windows.Forms.TextBox();
             this.hoursWorkedTextBox = new System.Windows.Forms.TextBox();
             this.totalSalesTextBox = new System.Windows.Forms.TextBox();
             this.salesBonusTextBox = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.employeeNameLabel = new System.Windows.Forms.Label();
+            this.employeeIDLabel = new System.Windows.Forms.Label();
+            this.hoursWorkedLabel = new System.Windows.Forms.Label();
+            this.totalSalesLabel = new System.Windows.Forms.Label();
+            this.salesBonusLabel = new System.Windows.Forms.Label();
             this.CalculateButton = new System.Windows.Forms.Button();
             this.PrintButton = new System.Windows.Forms.Button();
             this.ClearButton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.groupBox1.SuspendLayout();
+            this.languageBox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // groupBox1
+            // languageBox
             // 
-            this.groupBox1.Controls.Add(this.radioButton3);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.groupBox1.Location = new System.Drawing.Point(299, 23);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(200, 136);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Language";
+            this.languageBox.Controls.Add(this.espagnolRadioButton);
+            this.languageBox.Controls.Add(this.francaisRadioButton);
+            this.languageBox.Controls.Add(this.englishRadioButton);
+            this.languageBox.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.languageBox.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.languageBox.Location = new System.Drawing.Point(299, 23);
+            this.languageBox.Name = "languageBox";
+            this.languageBox.Size = new System.Drawing.Size(200, 136);
+            this.languageBox.TabIndex = 0;
+            this.languageBox.TabStop = false;
+            this.languageBox.Text = "Language";
             // 
-            // radioButton3
+            // espagnolRadioButton
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(18, 96);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(132, 33);
-            this.radioButton3.TabIndex = 2;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Espagnol\r\n";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.espagnolRadioButton.AutoSize = true;
+            this.espagnolRadioButton.Location = new System.Drawing.Point(18, 96);
+            this.espagnolRadioButton.Name = "espagnolRadioButton";
+            this.espagnolRadioButton.Size = new System.Drawing.Size(132, 33);
+            this.espagnolRadioButton.TabIndex = 2;
+            this.espagnolRadioButton.TabStop = true;
+            this.espagnolRadioButton.Text = "Espagnol\r\n";
+            this.espagnolRadioButton.UseVisualStyleBackColor = true;
+            this.espagnolRadioButton.CheckedChanged += new System.EventHandler(this.espagnolRadioButton_CheckedChanged);
             // 
-            // radioButton2
+            // francaisRadioButton
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(18, 66);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(128, 33);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Français";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.francaisRadioButton.AutoSize = true;
+            this.francaisRadioButton.Location = new System.Drawing.Point(18, 66);
+            this.francaisRadioButton.Name = "francaisRadioButton";
+            this.francaisRadioButton.Size = new System.Drawing.Size(128, 33);
+            this.francaisRadioButton.TabIndex = 1;
+            this.francaisRadioButton.TabStop = true;
+            this.francaisRadioButton.Text = "Français";
+            this.francaisRadioButton.UseVisualStyleBackColor = true;
+            this.francaisRadioButton.CheckedChanged += new System.EventHandler(this.francaisRadioButton_CheckedChanged);
             // 
-            // radioButton1
+            // englishRadioButton
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Checked = true;
-            this.radioButton1.Location = new System.Drawing.Point(18, 36);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(113, 33);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "English";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.englishRadioButton.AutoSize = true;
+            this.englishRadioButton.Checked = true;
+            this.englishRadioButton.Location = new System.Drawing.Point(18, 36);
+            this.englishRadioButton.Name = "englishRadioButton";
+            this.englishRadioButton.Size = new System.Drawing.Size(113, 33);
+            this.englishRadioButton.TabIndex = 0;
+            this.englishRadioButton.TabStop = true;
+            this.englishRadioButton.Text = "English";
+            this.englishRadioButton.UseVisualStyleBackColor = true;
+            this.englishRadioButton.CheckedChanged += new System.EventHandler(this.englishRadioButton_CheckedChanged);
             // 
             // EmployeeNameTextBox
             // 
@@ -159,60 +162,60 @@ namespace COMP1004_RAILL_ASSIGNMENT1
             this.salesBonusTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.salesBonusTextBox.WordWrap = false;
             // 
-            // label1
+            // employeeNameLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(35, 205);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(208, 29);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Employee\'s Name:";
+            this.employeeNameLabel.AutoSize = true;
+            this.employeeNameLabel.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.employeeNameLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.employeeNameLabel.Location = new System.Drawing.Point(35, 205);
+            this.employeeNameLabel.Name = "employeeNameLabel";
+            this.employeeNameLabel.Size = new System.Drawing.Size(208, 29);
+            this.employeeNameLabel.TabIndex = 6;
+            this.employeeNameLabel.Text = "Employee\'s Name:";
             // 
-            // label2
+            // employeeIDLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label2.Location = new System.Drawing.Point(35, 250);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(155, 29);
-            this.label2.TabIndex = 7;
-            this.label2.Text = "Employee ID:";
+            this.employeeIDLabel.AutoSize = true;
+            this.employeeIDLabel.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.employeeIDLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.employeeIDLabel.Location = new System.Drawing.Point(35, 250);
+            this.employeeIDLabel.Name = "employeeIDLabel";
+            this.employeeIDLabel.Size = new System.Drawing.Size(155, 29);
+            this.employeeIDLabel.TabIndex = 7;
+            this.employeeIDLabel.Text = "Employee ID:";
             // 
-            // label3
+            // hoursWorkedLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label3.Location = new System.Drawing.Point(35, 294);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(170, 29);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Hours Worked:";
+            this.hoursWorkedLabel.AutoSize = true;
+            this.hoursWorkedLabel.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hoursWorkedLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.hoursWorkedLabel.Location = new System.Drawing.Point(35, 294);
+            this.hoursWorkedLabel.Name = "hoursWorkedLabel";
+            this.hoursWorkedLabel.Size = new System.Drawing.Size(170, 29);
+            this.hoursWorkedLabel.TabIndex = 8;
+            this.hoursWorkedLabel.Text = "Hours Worked:";
             // 
-            // label4
+            // totalSalesLabel
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(35, 342);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(141, 29);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "Total Sales:";
+            this.totalSalesLabel.AutoSize = true;
+            this.totalSalesLabel.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totalSalesLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.totalSalesLabel.Location = new System.Drawing.Point(35, 342);
+            this.totalSalesLabel.Name = "totalSalesLabel";
+            this.totalSalesLabel.Size = new System.Drawing.Size(141, 29);
+            this.totalSalesLabel.TabIndex = 9;
+            this.totalSalesLabel.Text = "Total Sales:";
             // 
-            // label5
+            // salesBonusLabel
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(39, 390);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(147, 29);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "Sales Bonus:";
+            this.salesBonusLabel.AutoSize = true;
+            this.salesBonusLabel.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.salesBonusLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.salesBonusLabel.Location = new System.Drawing.Point(39, 390);
+            this.salesBonusLabel.Name = "salesBonusLabel";
+            this.salesBonusLabel.Size = new System.Drawing.Size(147, 29);
+            this.salesBonusLabel.TabIndex = 10;
+            this.salesBonusLabel.Text = "Sales Bonus:";
             // 
             // CalculateButton
             // 
@@ -267,24 +270,24 @@ namespace COMP1004_RAILL_ASSIGNMENT1
             this.Controls.Add(this.ClearButton);
             this.Controls.Add(this.PrintButton);
             this.Controls.Add(this.CalculateButton);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.salesBonusLabel);
+            this.Controls.Add(this.totalSalesLabel);
+            this.Controls.Add(this.hoursWorkedLabel);
+            this.Controls.Add(this.employeeIDLabel);
+            this.Controls.Add(this.employeeNameLabel);
             this.Controls.Add(this.salesBonusTextBox);
             this.Controls.Add(this.totalSalesTextBox);
             this.Controls.Add(this.hoursWorkedTextBox);
             this.Controls.Add(this.employeeIDTextBox);
             this.Controls.Add(this.EmployeeNameTextBox);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.languageBox);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "SalesBonus";
             this.Text = "Sales Bonus";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.languageBox.ResumeLayout(false);
+            this.languageBox.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -293,23 +296,23 @@ namespace COMP1004_RAILL_ASSIGNMENT1
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.GroupBox languageBox;
+        private System.Windows.Forms.RadioButton francaisRadioButton;
+        private System.Windows.Forms.RadioButton englishRadioButton;
         private System.Windows.Forms.TextBox EmployeeNameTextBox;
         private System.Windows.Forms.TextBox employeeIDTextBox;
         private System.Windows.Forms.TextBox hoursWorkedTextBox;
         private System.Windows.Forms.TextBox totalSalesTextBox;
         private System.Windows.Forms.TextBox salesBonusTextBox;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label employeeNameLabel;
+        private System.Windows.Forms.Label employeeIDLabel;
+        private System.Windows.Forms.Label hoursWorkedLabel;
+        private System.Windows.Forms.Label totalSalesLabel;
+        private System.Windows.Forms.Label salesBonusLabel;
         private System.Windows.Forms.Button CalculateButton;
         private System.Windows.Forms.Button PrintButton;
         private System.Windows.Forms.Button ClearButton;
-        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.RadioButton espagnolRadioButton;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
