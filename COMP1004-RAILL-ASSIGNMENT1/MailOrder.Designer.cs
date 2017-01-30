@@ -62,7 +62,7 @@ namespace COMP1004_RAILL_ASSIGNMENT1
             this.languageBox.Controls.Add(this.englishRadioButton);
             this.languageBox.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.languageBox.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.languageBox.Location = new System.Drawing.Point(299, 23);
+            this.languageBox.Location = new System.Drawing.Point(325, 12);
             this.languageBox.Name = "languageBox";
             this.languageBox.Size = new System.Drawing.Size(200, 136);
             this.languageBox.TabIndex = 0;
@@ -72,7 +72,7 @@ namespace COMP1004_RAILL_ASSIGNMENT1
             // espagnolRadioButton
             // 
             this.espagnolRadioButton.AutoSize = true;
-            this.espagnolRadioButton.Location = new System.Drawing.Point(18, 96);
+            this.espagnolRadioButton.Location = new System.Drawing.Point(18, 97);
             this.espagnolRadioButton.Name = "espagnolRadioButton";
             this.espagnolRadioButton.Size = new System.Drawing.Size(132, 33);
             this.espagnolRadioButton.TabIndex = 2;
@@ -110,7 +110,7 @@ namespace COMP1004_RAILL_ASSIGNMENT1
             // 
             this.EmployeeNameTextBox.AcceptsTab = true;
             this.EmployeeNameTextBox.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmployeeNameTextBox.Location = new System.Drawing.Point(273, 199);
+            this.EmployeeNameTextBox.Location = new System.Drawing.Point(299, 199);
             this.EmployeeNameTextBox.Name = "EmployeeNameTextBox";
             this.EmployeeNameTextBox.Size = new System.Drawing.Size(226, 35);
             this.EmployeeNameTextBox.TabIndex = 1;
@@ -119,7 +119,7 @@ namespace COMP1004_RAILL_ASSIGNMENT1
             // 
             this.employeeIDTextBox.AcceptsTab = true;
             this.employeeIDTextBox.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.employeeIDTextBox.Location = new System.Drawing.Point(273, 245);
+            this.employeeIDTextBox.Location = new System.Drawing.Point(299, 245);
             this.employeeIDTextBox.MaxLength = 12;
             this.employeeIDTextBox.Name = "employeeIDTextBox";
             this.employeeIDTextBox.Size = new System.Drawing.Size(226, 35);
@@ -128,7 +128,7 @@ namespace COMP1004_RAILL_ASSIGNMENT1
             // hoursWorkedTextBox
             // 
             this.hoursWorkedTextBox.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hoursWorkedTextBox.Location = new System.Drawing.Point(273, 289);
+            this.hoursWorkedTextBox.Location = new System.Drawing.Point(299, 289);
             this.hoursWorkedTextBox.MaxLength = 6;
             this.hoursWorkedTextBox.Name = "hoursWorkedTextBox";
             this.hoursWorkedTextBox.Size = new System.Drawing.Size(226, 35);
@@ -139,7 +139,7 @@ namespace COMP1004_RAILL_ASSIGNMENT1
             // 
             this.totalSalesTextBox.AcceptsTab = true;
             this.totalSalesTextBox.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totalSalesTextBox.Location = new System.Drawing.Point(273, 337);
+            this.totalSalesTextBox.Location = new System.Drawing.Point(299, 337);
             this.totalSalesTextBox.MaxLength = 10;
             this.totalSalesTextBox.Name = "totalSalesTextBox";
             this.totalSalesTextBox.Size = new System.Drawing.Size(226, 35);
@@ -152,7 +152,7 @@ namespace COMP1004_RAILL_ASSIGNMENT1
             this.salesBonusTextBox.Enabled = false;
             this.salesBonusTextBox.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.salesBonusTextBox.ImeMode = System.Windows.Forms.ImeMode.Disable;
-            this.salesBonusTextBox.Location = new System.Drawing.Point(273, 385);
+            this.salesBonusTextBox.Location = new System.Drawing.Point(299, 384);
             this.salesBonusTextBox.Name = "salesBonusTextBox";
             this.salesBonusTextBox.ReadOnly = true;
             this.salesBonusTextBox.ShortcutsEnabled = false;
@@ -231,7 +231,7 @@ namespace COMP1004_RAILL_ASSIGNMENT1
             // PrintButton
             // 
             this.PrintButton.Font = new System.Drawing.Font("Trebuchet MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PrintButton.Location = new System.Drawing.Point(209, 467);
+            this.PrintButton.Location = new System.Drawing.Point(225, 467);
             this.PrintButton.Name = "PrintButton";
             this.PrintButton.Size = new System.Drawing.Size(136, 34);
             this.PrintButton.TabIndex = 12;
@@ -242,7 +242,7 @@ namespace COMP1004_RAILL_ASSIGNMENT1
             // ClearButton
             // 
             this.ClearButton.Font = new System.Drawing.Font("Trebuchet MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ClearButton.Location = new System.Drawing.Point(374, 467);
+            this.ClearButton.Location = new System.Drawing.Point(400, 467);
             this.ClearButton.Name = "ClearButton";
             this.ClearButton.Size = new System.Drawing.Size(125, 34);
             this.ClearButton.TabIndex = 13;

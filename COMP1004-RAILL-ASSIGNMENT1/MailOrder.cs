@@ -112,7 +112,7 @@ namespace COMP1004_RAILL_ASSIGNMENT1
             employeeIDLabel.Text = "Nº Employé:";
             hoursWorkedLabel.Text = "Heures Travaillées:";
             totalSalesLabel.Text = "Total des ventes:";
-            salesBonusLabel.Text = "Bonification de ventes:";
+            salesBonusLabel.Text = "Prime à la vente:";
             CalculateButton.Text = "Calculez";
             PrintButton.Text = "Imprimer";
             ClearButton.Text = "Suivant";
@@ -125,8 +125,8 @@ namespace COMP1004_RAILL_ASSIGNMENT1
         {
             
             languageBox.Text = "Idioma";
-            employeeNameLabel.Text = "El nombre del empleado:";
-            employeeIDLabel.Text = "Identificación del empleado:";
+            employeeNameLabel.Text = "Nombre del empleado:";
+            employeeIDLabel.Text = "Nº del empleado:";
             hoursWorkedLabel.Text = "Horas trabajadas:";
             totalSalesLabel.Text = "Ventas totales:";
             salesBonusLabel.Text = "Prima de las ventas:";
@@ -135,8 +135,6 @@ namespace COMP1004_RAILL_ASSIGNMENT1
             ClearButton.Text = "Siguiente";
 
         }
-
-       
     }
 }
 
