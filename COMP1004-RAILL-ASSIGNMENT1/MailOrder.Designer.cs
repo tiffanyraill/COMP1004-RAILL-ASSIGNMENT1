@@ -47,9 +47,9 @@ namespace COMP1004_RAILL_ASSIGNMENT1
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.CalculateButton = new System.Windows.Forms.Button();
+            this.PrintButton = new System.Windows.Forms.Button();
+            this.ClearButton = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -126,6 +126,7 @@ namespace COMP1004_RAILL_ASSIGNMENT1
             this.hoursWorkedTextBox.Name = "hoursWorkedTextBox";
             this.hoursWorkedTextBox.Size = new System.Drawing.Size(226, 26);
             this.hoursWorkedTextBox.TabIndex = 3;
+            this.hoursWorkedTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // totalSalesTextBox
             // 
@@ -134,14 +135,17 @@ namespace COMP1004_RAILL_ASSIGNMENT1
             this.totalSalesTextBox.Name = "totalSalesTextBox";
             this.totalSalesTextBox.Size = new System.Drawing.Size(226, 26);
             this.totalSalesTextBox.TabIndex = 4;
+            this.totalSalesTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // salesBonusTextBox
             // 
+            this.salesBonusTextBox.Cursor = System.Windows.Forms.Cursors.No;
             this.salesBonusTextBox.Location = new System.Drawing.Point(273, 385);
             this.salesBonusTextBox.Name = "salesBonusTextBox";
             this.salesBonusTextBox.ReadOnly = true;
             this.salesBonusTextBox.Size = new System.Drawing.Size(226, 26);
             this.salesBonusTextBox.TabIndex = 5;
+            this.salesBonusTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label1
             // 
@@ -198,36 +202,38 @@ namespace COMP1004_RAILL_ASSIGNMENT1
             this.label5.TabIndex = 10;
             this.label5.Text = "Sales Bonus:";
             // 
-            // button1
+            // CalculateButton
             // 
-            this.button1.Font = new System.Drawing.Font("Trebuchet MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(39, 467);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(136, 34);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Calculate";
-            this.button1.UseVisualStyleBackColor = true;
+            this.CalculateButton.Font = new System.Drawing.Font("Trebuchet MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CalculateButton.Location = new System.Drawing.Point(39, 467);
+            this.CalculateButton.Name = "CalculateButton";
+            this.CalculateButton.Size = new System.Drawing.Size(136, 34);
+            this.CalculateButton.TabIndex = 11;
+            this.CalculateButton.Text = "Calculate";
+            this.CalculateButton.UseVisualStyleBackColor = true;
+            this.CalculateButton.Click += new System.EventHandler(this.CalculateButton_Click);
             // 
-            // button2
+            // PrintButton
             // 
-            this.button2.Font = new System.Drawing.Font("Trebuchet MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(209, 467);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(136, 34);
-            this.button2.TabIndex = 12;
-            this.button2.Text = "Print";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.PrintButton.Font = new System.Drawing.Font("Trebuchet MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.PrintButton.Location = new System.Drawing.Point(209, 467);
+            this.PrintButton.Name = "PrintButton";
+            this.PrintButton.Size = new System.Drawing.Size(136, 34);
+            this.PrintButton.TabIndex = 12;
+            this.PrintButton.Text = "Print";
+            this.PrintButton.UseVisualStyleBackColor = true;
+            this.PrintButton.Click += new System.EventHandler(this.PrintButton_Click);
             // 
-            // button3
+            // ClearButton
             // 
-            this.button3.Font = new System.Drawing.Font("Trebuchet MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(374, 467);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(125, 34);
-            this.button3.TabIndex = 13;
-            this.button3.Text = "Clear";
-            this.button3.UseVisualStyleBackColor = true;
+            this.ClearButton.Font = new System.Drawing.Font("Trebuchet MS", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ClearButton.Location = new System.Drawing.Point(374, 467);
+            this.ClearButton.Name = "ClearButton";
+            this.ClearButton.Size = new System.Drawing.Size(125, 34);
+            this.ClearButton.TabIndex = 13;
+            this.ClearButton.Text = "Clear";
+            this.ClearButton.UseVisualStyleBackColor = true;
+            this.ClearButton.Click += new System.EventHandler(this.ClearButton_Click);
             // 
             // pictureBox1
             // 
@@ -246,9 +252,9 @@ namespace COMP1004_RAILL_ASSIGNMENT1
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(548, 543);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.ClearButton);
+            this.Controls.Add(this.PrintButton);
+            this.Controls.Add(this.CalculateButton);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -288,9 +294,9 @@ namespace COMP1004_RAILL_ASSIGNMENT1
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button CalculateButton;
+        private System.Windows.Forms.Button PrintButton;
+        private System.Windows.Forms.Button ClearButton;
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
