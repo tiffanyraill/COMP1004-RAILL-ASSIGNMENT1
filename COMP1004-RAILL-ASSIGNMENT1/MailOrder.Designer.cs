@@ -74,10 +74,10 @@ namespace COMP1004_RAILL_ASSIGNMENT1
             this.espagnolRadioButton.AutoSize = true;
             this.espagnolRadioButton.Location = new System.Drawing.Point(18, 97);
             this.espagnolRadioButton.Name = "espagnolRadioButton";
-            this.espagnolRadioButton.Size = new System.Drawing.Size(132, 33);
+            this.espagnolRadioButton.Size = new System.Drawing.Size(119, 33);
             this.espagnolRadioButton.TabIndex = 2;
             this.espagnolRadioButton.TabStop = true;
-            this.espagnolRadioButton.Text = "Espagnol\r\n";
+            this.espagnolRadioButton.Text = "Spanish";
             this.espagnolRadioButton.UseVisualStyleBackColor = true;
             this.espagnolRadioButton.CheckedChanged += new System.EventHandler(this.espagnolRadioButton_CheckedChanged);
             // 
@@ -86,10 +86,10 @@ namespace COMP1004_RAILL_ASSIGNMENT1
             this.francaisRadioButton.AutoSize = true;
             this.francaisRadioButton.Location = new System.Drawing.Point(18, 66);
             this.francaisRadioButton.Name = "francaisRadioButton";
-            this.francaisRadioButton.Size = new System.Drawing.Size(128, 33);
+            this.francaisRadioButton.Size = new System.Drawing.Size(111, 33);
             this.francaisRadioButton.TabIndex = 1;
             this.francaisRadioButton.TabStop = true;
-            this.francaisRadioButton.Text = "Français";
+            this.francaisRadioButton.Text = "French";
             this.francaisRadioButton.UseVisualStyleBackColor = true;
             this.francaisRadioButton.CheckedChanged += new System.EventHandler(this.francaisRadioButton_CheckedChanged);
             // 
@@ -256,7 +256,7 @@ namespace COMP1004_RAILL_ASSIGNMENT1
             this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(252, 172);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
             // 

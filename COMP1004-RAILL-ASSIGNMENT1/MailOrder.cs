@@ -90,6 +90,9 @@ namespace COMP1004_RAILL_ASSIGNMENT1
                 englishRadioButton.AutoCheck = true;
 
                 languageBox.Text = "Language";
+                englishRadioButton.Text = "English";
+                francaisRadioButton.Text = "French";
+                espagnolRadioButton.Text = "Spanish";
                 employeeNameLabel.Text = "Employee's Name:";
                 employeeIDLabel.Text = "Employee ID:";
                 hoursWorkedLabel.Text = "Hours Worked:";
@@ -108,6 +111,9 @@ namespace COMP1004_RAILL_ASSIGNMENT1
         {
 
             languageBox.Text = "Language";
+            englishRadioButton.Text = "Anglais";
+            francaisRadioButton.Text = "Français";
+            espagnolRadioButton.Text = "Espagnol";
             employeeNameLabel.Text = "Nom de l'Employé:";
             employeeIDLabel.Text = "Nº Employé:";
             hoursWorkedLabel.Text = "Heures Travaillées:";
@@ -125,6 +131,9 @@ namespace COMP1004_RAILL_ASSIGNMENT1
         {
             
             languageBox.Text = "Idioma";
+            englishRadioButton.Text = "Inglés";
+            francaisRadioButton.Text = "Francés";
+            espagnolRadioButton.Text = "Español";
             employeeNameLabel.Text = "Nombre del empleado:";
             employeeIDLabel.Text = "Nº del empleado:";
             hoursWorkedLabel.Text = "Horas trabajadas:";
