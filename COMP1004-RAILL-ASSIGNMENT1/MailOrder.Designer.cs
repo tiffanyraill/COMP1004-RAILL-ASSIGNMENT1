@@ -1,4 +1,8 @@
-﻿namespace COMP1004_RAILL_ASSIGNMENT1
+﻿/// MailOrder.Designer.cs page
+///Author: Tiffany Raill, Created on January 16, 2017
+/// This is an app that allows a user to calculate the Sales Bonus per employee
+/// based on 2% of their sales and their hours worked.
+namespace COMP1004_RAILL_ASSIGNMENT1
 {
     partial class SalesBonus
     {
@@ -30,6 +34,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SalesBonus));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.EmployeeNameTextBox = new System.Windows.Forms.TextBox();
@@ -45,7 +50,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -64,6 +68,17 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Language";
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Location = new System.Drawing.Point(18, 96);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(132, 33);
+            this.radioButton3.TabIndex = 2;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "Espagnol\r\n";
+            this.radioButton3.UseVisualStyleBackColor = true;
             // 
             // radioButton2
             // 
@@ -107,6 +122,7 @@
             // hoursWorkedTextBox
             // 
             this.hoursWorkedTextBox.Location = new System.Drawing.Point(273, 289);
+            this.hoursWorkedTextBox.MaxLength = 3;
             this.hoursWorkedTextBox.Name = "hoursWorkedTextBox";
             this.hoursWorkedTextBox.Size = new System.Drawing.Size(226, 26);
             this.hoursWorkedTextBox.TabIndex = 3;
@@ -123,6 +139,7 @@
             // 
             this.salesBonusTextBox.Location = new System.Drawing.Point(273, 385);
             this.salesBonusTextBox.Name = "salesBonusTextBox";
+            this.salesBonusTextBox.ReadOnly = true;
             this.salesBonusTextBox.Size = new System.Drawing.Size(226, 26);
             this.salesBonusTextBox.TabIndex = 5;
             // 
@@ -212,17 +229,6 @@
             this.button3.Text = "Clear";
             this.button3.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(18, 96);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(132, 33);
-            this.radioButton3.TabIndex = 2;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Espagnol\r\n";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
@@ -254,6 +260,8 @@
             this.Controls.Add(this.employeeIDTextBox);
             this.Controls.Add(this.EmployeeNameTextBox);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "SalesBonus";
             this.Text = "Sales Bonus";
             this.Load += new System.EventHandler(this.Form1_Load);
