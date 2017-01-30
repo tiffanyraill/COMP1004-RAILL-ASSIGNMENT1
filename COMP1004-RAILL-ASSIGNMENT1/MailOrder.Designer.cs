@@ -106,46 +106,58 @@ namespace COMP1004_RAILL_ASSIGNMENT1
             // EmployeeNameTextBox
             // 
             this.EmployeeNameTextBox.AcceptsTab = true;
+            this.EmployeeNameTextBox.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EmployeeNameTextBox.Location = new System.Drawing.Point(273, 199);
             this.EmployeeNameTextBox.Name = "EmployeeNameTextBox";
-            this.EmployeeNameTextBox.Size = new System.Drawing.Size(226, 26);
+            this.EmployeeNameTextBox.Size = new System.Drawing.Size(226, 35);
             this.EmployeeNameTextBox.TabIndex = 1;
             // 
             // employeeIDTextBox
             // 
             this.employeeIDTextBox.AcceptsTab = true;
+            this.employeeIDTextBox.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.employeeIDTextBox.Location = new System.Drawing.Point(273, 245);
+            this.employeeIDTextBox.MaxLength = 12;
             this.employeeIDTextBox.Name = "employeeIDTextBox";
-            this.employeeIDTextBox.Size = new System.Drawing.Size(226, 26);
+            this.employeeIDTextBox.Size = new System.Drawing.Size(226, 35);
             this.employeeIDTextBox.TabIndex = 2;
             // 
             // hoursWorkedTextBox
             // 
+            this.hoursWorkedTextBox.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.hoursWorkedTextBox.Location = new System.Drawing.Point(273, 289);
-            this.hoursWorkedTextBox.MaxLength = 3;
+            this.hoursWorkedTextBox.MaxLength = 6;
             this.hoursWorkedTextBox.Name = "hoursWorkedTextBox";
-            this.hoursWorkedTextBox.Size = new System.Drawing.Size(226, 26);
+            this.hoursWorkedTextBox.Size = new System.Drawing.Size(226, 35);
             this.hoursWorkedTextBox.TabIndex = 3;
             this.hoursWorkedTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // totalSalesTextBox
             // 
             this.totalSalesTextBox.AcceptsTab = true;
+            this.totalSalesTextBox.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.totalSalesTextBox.Location = new System.Drawing.Point(273, 337);
+            this.totalSalesTextBox.MaxLength = 10;
             this.totalSalesTextBox.Name = "totalSalesTextBox";
-            this.totalSalesTextBox.Size = new System.Drawing.Size(226, 26);
+            this.totalSalesTextBox.Size = new System.Drawing.Size(226, 35);
             this.totalSalesTextBox.TabIndex = 4;
             this.totalSalesTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // salesBonusTextBox
             // 
             this.salesBonusTextBox.Cursor = System.Windows.Forms.Cursors.No;
+            this.salesBonusTextBox.Enabled = false;
+            this.salesBonusTextBox.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.salesBonusTextBox.ImeMode = System.Windows.Forms.ImeMode.Disable;
             this.salesBonusTextBox.Location = new System.Drawing.Point(273, 385);
             this.salesBonusTextBox.Name = "salesBonusTextBox";
             this.salesBonusTextBox.ReadOnly = true;
-            this.salesBonusTextBox.Size = new System.Drawing.Size(226, 26);
+            this.salesBonusTextBox.ShortcutsEnabled = false;
+            this.salesBonusTextBox.Size = new System.Drawing.Size(226, 35);
             this.salesBonusTextBox.TabIndex = 5;
+            this.salesBonusTextBox.TabStop = false;
             this.salesBonusTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.salesBonusTextBox.WordWrap = false;
             // 
             // label1
             // 

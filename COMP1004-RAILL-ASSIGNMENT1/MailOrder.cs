@@ -1,4 +1,8 @@
-﻿using System;
+﻿/// MailOrderFunctionality.cs page
+///@Author: Tiffany Raill, Created on January 16, 2017
+/// This is an app that allows a user to calculate the Sales Bonus per employee
+/// based on 2% of their sales and their hours worked.
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -23,6 +27,12 @@ namespace COMP1004_RAILL_ASSIGNMENT1
         }
         private void ClearButton_Click(object sender, EventArgs e)
         {
+            EmployeeNameTextBox.Text = "";
+            employeeIDTextBox.Text = "";
+            hoursWorkedTextBox.Text = "";
+            totalSalesTextBox.Text = "";
+            salesBonusTextBox.Text = "";
+
 
         }
         private void PrintButton_Click(object sender, EventArgs e)
@@ -44,10 +54,15 @@ namespace COMP1004_RAILL_ASSIGNMENT1
             decimal sales = Convert.ToDecimal(totalSalesTextBox.Text);
             decimal percentOfSales = .02m;
             decimal totalSales = sales * percentOfSales;
+           /// totalSalesTextBox.Text = totalSales.ToString("c");
 
             decimal salesBonus = Math.Round(percentHours * totalSales, 2);
 
+
             salesBonusTextBox.Text = Convert.ToString(salesBonus);
+            ///add some currency formatting
+            salesBonusTextBox.Text = salesBonus.ToString("c");
+          
         }
     }
 }
